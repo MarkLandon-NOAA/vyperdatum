@@ -1,5 +1,6 @@
 from osgeo import gdal
 
+gdal.DontUseExceptions()
 
 def get_value_at_xy(x: float, y: float, fname: str = r"C:\vdatum_all_20201203\vdatum\core\geoid12b\g2012bu0.gtx", add_threesixty: bool = True):
     driver = gdal.GetDriverByName('gtx')

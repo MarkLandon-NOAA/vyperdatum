@@ -2,6 +2,8 @@ from osgeo import gdal
 
 from vyperdatum.__version__ import __version__
 
+gdal.DontUseExceptions()
+
 version = gdal.VersionInfo()
 major = int(version[0])
 minor = int(version[1:3])

@@ -10,6 +10,7 @@ from pyproj.exceptions import CRSError
 from vyperdatum.core import VyperCore
 from vyperdatum.vypercrs import get_transformation_pipeline
 
+gdal.DontUseExceptions()
 
 class VyperRaster(VyperCore):
     """

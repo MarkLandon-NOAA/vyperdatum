@@ -12,6 +12,7 @@ from vyperdatum.vypercrs import VyperPipelineCRS, get_transformation_pipeline, g
     frame_to_3dcrs
 from vyperdatum.vdatum_validation import vdatum_hashlookup, vdatum_geoidlookup
 
+gdal.DontUseExceptions()
 
 grid_formats = ['.tif', '.tiff', '.gtx']
 

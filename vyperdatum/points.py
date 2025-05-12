@@ -5,6 +5,7 @@ from typing import Union
 
 from vyperdatum.core import VyperCore
 
+gdal.DontUseExceptions()
 
 class VyperPoints(VyperCore):
     """
